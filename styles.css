@@ -1,0 +1,51 @@
+:root {
+	--grid-rows: 1;
+	--grid-cols: 1;
+}
+
+html {
+	box-sizing: border-box;
+	background-color: #c1c8e4;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+}
+
+.btn-container {
+	display: flex;
+	gap: 1rem;
+}
+
+.btn {
+	margin-top: 1rem;
+	padding: 0.625rem;
+	border: 1px solid #000;
+	background: none;
+}
+
+.btn:hover {
+	background: #696e88;
+	cursor: pointer;
+}
+
+.container {
+	width: 600px;
+	height: 600px;
+	display: grid;
+	z-index: 1;
+	padding-top: 1.25rem;
+}
